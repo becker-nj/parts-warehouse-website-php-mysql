@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Update Part Bin Quantity</title>
+        <link rel="stylesheet" href="layout.css" type="text/css">
+        <link rel="stylesheet" href="pretty_form.css" type = "text/css">
+
+    </head>
+    <body>
+      <h1><strong>Parts Warehouse</strong></h1>
+      <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+      <a href="place_order.html">Place Order</a>
+      <a href="cancel_order.html">Cancel Order</a>
+      <a href="update_part_bin_quantity.html" class="active">Update Parts Bin Quantity</a>
+      <a href="get_bin_info.html">Get Bin Info</a>
+      <a href="time_to_ship.html">Shipping Times</a>
+      </div>
+      
+        <form action="update_part_bin_quantity.php" method="post" id="submitForm">
+			<p class = "binNum">
+            Bin Number: <input type="text" name="binNum">
+            </p>
+            <p class = "quantity">
+			Quantity: <input type="text" name="quantity">
+			</p>
+			
+			<p class="updateChoice">
+				<label for= "incrementChoice">Increment: </label>
+				<input type="radio" name = "radio" id="incrementChoice" value ="increase">
+				<label for= "decrementChoice">Decrement: </label>				
+				<input type="radio" name = "radio" id="decrementChoice" value="decrease">
+			</p>
+			<p class = "submit">
+				<input type="submit" name="submit" value="Update Quantity">
+			</p>
+        </form>
+        
+        <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="add.js"></script> 
+    </body>
+</html>
